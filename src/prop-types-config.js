@@ -4,6 +4,7 @@ const propTypesConfig = {
 	playerId: PropTypes.string.isRequired,
 	playerClasses: PropTypes.string,
 	playerInitScript: PropTypes.string.isRequired,
+	playerContext: PropTypes.instanceOf(Element),
 	sources: PropTypes.array.isRequired,
 	subtitles: PropTypes.array,
 	className: PropTypes.string,

@@ -1,5 +1,6 @@
 import { noop } from './lib/noop';
 const defaultPropsInit = {
+	playerContext: document,
 	className: '',
 	adaptiveRatio: false,
 	aspectRatio: '16:9',

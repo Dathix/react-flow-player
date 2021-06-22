@@ -81,7 +81,7 @@ const initFlowPlayerSetup = props => {
 		}
 	}
 
-	const player = window.flowplayer(`#${props.playerId}`, config);
+	const player = window.flowplayer(`${props.playerContext} #${props.playerId}`, config);
 	if (player) {
 		player.on('resume', onResume).on('error', onError);
 		const intervalBreak = setInterval(function(){
